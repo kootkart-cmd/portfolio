@@ -426,10 +426,17 @@
     min-block-size: 100vh;
     position: fixed;
     width: 100%;
-    background-color: #ff5e99;
-    background-image: var(--gradient-brand);
+    background-color: var(--bg-color-primary);
     transition: 450ms var(--easing);
     z-index: 3;
+  }
+
+  body.dark .nav {
+    background-image: linear-gradient(#000000f0, #0c0a0af2);
+  }
+
+  body.light .nav {
+    background-image: linear-gradient(#ffffffeb, #fbfbfbf0);
   }
   
   .nav-items {
@@ -448,7 +455,7 @@
     display: inline-block;
     font-size: var(--h2);
     text-decoration: none;
-    color: #fff;
+    color: var(--important);
   }
   
   .nav-item a::after {
@@ -458,7 +465,7 @@
     width: 100%;
     transform: scale(0);
     transform-origin: left;
-    background-color: white;
+    background-color: var(--important);
     transition: transform 250ms var(--easing);
   }
   
