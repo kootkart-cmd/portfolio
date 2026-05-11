@@ -83,6 +83,7 @@
     font-family: "Mona Sans", sans-serif;
     box-sizing: border-box;
     scroll-padding-top: var(--scroll-padding);
+    scroll-behavior: smooth;
   }
   
   @media (max-width: 1200px) {
