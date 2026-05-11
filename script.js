@@ -147,7 +147,16 @@ if (contactFormEl && contactStatusEl) {
       });
 
       if (!response.ok) {
-        throw new Error("Unable to send");
+        let errorMessage = "Unable to send";
+        try {
+          const errorBody = await response.json();
+          if (errorBody && errorBody.error) {
+            errorMessage = errorBody.error;
+          }
+        } catch (parseError) {
+          // Keep generic fallback when response body is not JSON.
+        }
+        throw new Error(errorMessage);
       }
 
       contactStatusEl.textContent =
@@ -155,8 +164,7 @@ if (contactFormEl && contactStatusEl) {
       contactStatusEl.classList.add("is-success");
       contactFormEl.reset();
     } catch (error) {
-      contactStatusEl.textContent =
-        "Message failed to send. Please try again in a moment.";
+      contactStatusEl.textContent = `Message failed to send: ${error.message}`;
       contactStatusEl.classList.add("is-error");
     } finally {
       submitBtn.disabled = false;
