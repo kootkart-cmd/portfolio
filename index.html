@@ -411,7 +411,7 @@
               </p>
               <p class="signatures" aria-label="Signature">Shubham Kashyap</p>
             </div>
-            <form action="#" class="contact-form" netlify>
+            <form action="/api/contact" method="post" class="contact-form" id="contact-form">
               <div class="form-field">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" required />
@@ -431,6 +431,7 @@
                 <textarea name="message" id="message" required></textarea>
               </div>
               <button type="submit" class="btn btn-cta">Send</button>
+              <p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
             </form>
           </div>
             <label class="theme-switch" for="theme-switch">
