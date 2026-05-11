@@ -10,32 +10,32 @@
 
     <meta
       name="description"
-      content="Welcome to my portfolio website. I am a Android developer and I specialize in creating user-friendly, responsive and accessible apps. Explore my projects, open-source work and contact me for any inquiries or collaborations."
+      content="Welcome to my portfolio website. I am a Data Engineer focused on building scalable data pipelines, analytics workflows, and cloud-native platforms."
     />
 
     <!-- Google / Search Engine Tags -->
-<meta itemprop="name" content="Adarsh Kumar Maurya's Portfolio">
-<meta itemprop="description" content="Welcome to my portfolio website. I am an Android Developer and I specialize in creating user-friendly, responsive and accessible apps. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+<meta itemprop="name" content="Shubham Kashyap's Portfolio">
+<meta itemprop="description" content="Welcome to my portfolio website. I am a Data Engineer focused on building scalable data pipelines, analytics workflows, and cloud-native platforms.">
 
 <!-- Reference screenshot of updated site's header in place of content -->
 <meta itemprop="image" content="assets/images/sharing-card.png">
 
 <!-- Facebook Meta Tags -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Adarsh Kumar Maurya's Portfolio">
-<meta property="og:description" content="Welcome to my portfolio website. I am an Android developer and I specialize in creating user-friendly, responsive and accessible apps. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+<meta property="og:title" content="Shubham Kashyap's Portfolio">
+<meta property="og:description" content="Welcome to my portfolio website. I am a Data Engineer focused on building scalable data pipelines, analytics workflows, and cloud-native platforms.">
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Adarsh Kumar Maurya's Portfolio">
-<meta name="twitter:description" content="Welcome to my portfolio website. I am an Android developer and I specialize in creating user-friendly, responsive and accessible apps. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+<meta name="twitter:title" content="Shubham Kashyap's Portfolio">
+<meta name="twitter:description" content="Welcome to my portfolio website. I am a Data Engineer focused on building scalable data pipelines, analytics workflows, and cloud-native platforms.">
 
 
 <!-- Update favicon href attribute with image of yourself -->
     <link
       rel="shortcut icon"
-      href="assets/images/favicon.ico"
-      type="image/png"
+      href="assets/images/favicon.jpg"
+      type="image/jpeg"
     />
 
     <!-- Preloading fonts for better performance -->
@@ -52,7 +52,7 @@
     <script src="script.js" defer></script>
 
     <!-- Your name here -->
-    <title>Adarsh Kumar Maurya's Portfolio</title>
+    <title>Shubham Kashyap's Portfolio</title>
   </head>
 
   <body>
@@ -74,6 +74,7 @@
         <ol class="nav-items">
           <li class="nav-item"><a href="#">Home</a></li>
           <li class="nav-item"><a href="#work">My Project</a></li>
+          <li class="nav-item"><a href="#experience">Experience</a></li>
           <!-- <li class="nav-item"><a href="#blog">See Blog</a></li> -->
           <li class="nav-item"><a href="#skills">My Skills</a></li>
           <li class="nav-item">
@@ -84,15 +85,23 @@
 
       <div class="container">
         <div class="header-textbox">
+          <div class="header-profile">
+            <img
+              src="assets/images/profile.jpg"
+              alt="Shubham Kashyap"
+              class="profile-img"
+              loading="eager"
+            />
+          </div>
           <!-- Replace with your name and job title -->
           <h1 class="h1">
-            <span>Hi, I'm Adarsh Kumar Maurya</span>
-            <span>Android Developer</span>
+            <span>Hi, I'm Shubham Kashyap</span>
+            <span>Data Engineer</span>
           </h1>
 
           <!-- Add a small introductory paragraph about yourself -->
           <p class="header-text">
-            A passionate and skilled Android Developer specializing in Jetpack Compose, with hands-on experience in AWS cloud services, backend development, and open-source
+            Data Engineer with hands-on experience in building end-to-end pipelines using AWS, Apache Kafka, Spark, and Python for scalable analytics and real-time data processing.
           </p>
 
           <div class="header-btns">
@@ -102,15 +111,15 @@
           <nav style="padding: 5%;">
             <ol class="footer-links">
               <li class="footer-link">
-                <a title="GitHub" href="https://github.com/akmaurya7" target="_blank" rel="noopener"
+                <a title="Email" href="mailto:shubham.kashyap@rumango.com" target="_blank" rel="noopener"
                   ><img
                     loading="lazy"
                     src="assets/images/social-links/github.svg"
-                    alt="GitHub"
+                    alt="Email"
                 /></a>
               </li>
               <li class="footer-link">
-                <a title="Linkedin" href="https://www.linkedin.com/in/akmaurya7/" target="_blank" rel="noopener"
+                <a title="Linkedin" href="https://www.linkedin.com/in/shubham-kashyap-41012b16b/?trk=opento_nprofile_details" target="_blank" rel="noopener"
                   ><img
                     loading="lazy"
                     src="assets/images/social-links/linkedin.svg"
@@ -118,17 +127,15 @@
                 /></a>
               </li>
               <li class="footer-link">
-                <a title="Twitter" href="https://x.com/amaurya4570" target="_blank" rel="noopener"
+                <a title="Phone" href="tel:+919008154717" target="_blank" rel="noopener"
                   ><img
                     loading="lazy"
                     src="assets/images/social-links/twitter.svg"
-                    alt="Twitter"
+                    alt="Phone"
                 /></a>
               </li>
             </ol>
           </nav>
-
-
         </div>
       </div>
     </header>
@@ -142,92 +149,27 @@
             <div class="work-box">
               <div class="work-textbox">
                 <!-- Add your project title here -->
-                <h3 class="h3">Event Hive</h3>
+                <h3 class="h3">YouTube Data Analysis</h3>
                 <!-- Add small description of your project  -->
                 <p class="work-text">
-                  An easy to use native Android application where you can organize and manage all you Event together .
+                  Built an end-to-end data engineering pipeline to ingest YouTube metadata, automate ETL, and deliver actionable analytics dashboards.
                 </p>
                 <!-- Add technologies you used to build the project -->
                 <ol class="work-technologies">
-                  <li>Kotlin</li>
-                  <li>Jetpack Compose</li>
-                  <li>Firebase</li>
-                  <li>MVVM</li>
+                  <li>Python</li>
+                  <li>AWS S3</li>
+                  <li>AWS Glue</li>
+                  <li>Amazon Athena</li>
+                  <li>AWS Lambda</li>
+                  <li>Power BI</li>
                 </ol>
 
                 <div class="work-links">
                   <!-- Add url of project in href attribute -->
-                  <a href="https://github.com/Dibyajyoti-Raj/EventHive" target="_blank" rel="noopener" class="link"
-                    >Explore this project</a
-                  >
+                  <span class="link">End-to-End Data Engineering Pipeline</span>
 
                   <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
-                  <a
-                    href="https://github.com/Dibyajyoti-Raj/EventHive"
-                    target="_blank"
-                    rel="noopener"
-                    title="Source code"
-                  >
                   
-                    <img
-                      src="assets/images/social-links/github.svg"
-                      alt="GitHub"
-                      loading="lazy"
-                    />
-                  </a>
-                </div>
-              </div>
-
-              <!-- Update img src and alt attribute  -->
-
-              <picture class="work-img">
-                <img
-                  loading="lazy"
-                  src="assets/images/work/EventHive.png"
-                  alt="agency elevation"
-                />
-              </picture>
-            </div>
-
-            <!-- Second Project -->
-
-            <div class="work-box">
-              <div class="work-textbox">
-                <!-- Add your project title here -->
-                <h3 class="h3">Chatting App</h3>
-                <!-- Add small description of your project  -->
-                <p class="work-text">
-                  An easy to use native Android chatting application where you can chat with authenticatd user .
-                </p>
-                <!-- Add technologies you used to build the project -->
-                <ol class="work-technologies">
-                  <li>Kotlin</li>
-                  <li>Jetpack Compose</li>
-                  <li>Dagger-Hilt</li>
-                  <li>Firebase</li>
-                  <li>MVVM</li>
-                </ol>
-
-                <div class="work-links">
-                  <!-- Add url of project in href attribute -->
-                  <a href="https://github.com/akmaurya7/ChattingApp" target="_blank" rel="noopener" class="link"
-                    >Explore this project</a
-                  >
-
-                  <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
-                  <a
-                    href="https://github.com/akmaurya7/ChattingApp"
-                    target="_blank"
-                    rel="noopener"
-                    title="Source code"
-                  >
-                  
-                    <img
-                      src="assets/images/social-links/github.svg"
-                      alt="GitHub"
-                      loading="lazy"
-                    />
-                  </a>
                 </div>
               </div>
 
@@ -237,7 +179,47 @@
                 <img
                   loading="lazy"
                   src="assets/images/work/portfolio-template.webp"
-                  alt="agency elevation"
+                  alt="YouTube Data Analysis"
+                />
+              </picture>
+            </div>
+
+            <!-- Second Project -->
+
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Stock Market Real-Time Data Streaming</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  Developed a near real-time stock data streaming pipeline using Apache Kafka on AWS with persistent storage and SQL-based analytics.
+                </p>
+                <!-- Add technologies you used to build the project -->
+                <ol class="work-technologies">
+                  <li>Apache Kafka</li>
+                  <li>Python</li>
+                  <li>AWS EC2</li>
+                  <li>Amazon S3</li>
+                  <li>AWS Glue</li>
+                  <li>Amazon Athena</li>
+                </ol>
+
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <span class="link">Apache Kafka on AWS</span>
+
+                  <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  
+                </div>
+              </div>
+
+              <!-- Update img src and alt attribute  -->
+
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/portfolio-template.webp"
+                  alt="Stock Market Real-Time Data Streaming"
                 />
               </picture>
             </div>
@@ -247,32 +229,18 @@
 
             <div class="work-box">
               <div class="work-textbox">
-                <h3 class="h3">Calculator</h3>
+                <h3 class="h3">IPL Data Analysis</h3>
 
-                <p class="work-text">Calculator for arithematic operation.</p>
+                <p class="work-text">Built a distributed analytics pipeline using Apache Spark to process IPL historical data, generate team and player insights, and optimize batch performance.</p>
                 <ol class="work-technologies">
-                  <li>Kotlin</li>
-                  <li>XML</li>
-                  <li>Material UI</li>
+                  <li>Apache Spark</li>
+                  <li>PySpark</li>
+                  <li>Databricks</li>
+                  <li>Spark SQL</li>
                 </ol>
                 <div class="work-links">
 
-                  <a href = "https://github.com/akmaurya7/BestCalculator" target="_blank" rel="noopener" class="link"
-                    >Explore this project</a
-                  >
-
-                     <a
-                    href="https://github.com/akmaurya7/BestCalculator"
-                    target="_blank"
-                    rel="noopener"
-                    title="Source code"
-                  >
-                    <img
-                      src="assets/images/social-links/github.svg"
-                      alt="GitHub"
-                      loading="lazy"
-                    />
-                  </a>
+                  <span class="link">Apache Spark Distributed Analytics Pipeline</span>
                 </div>
               </div> 
                 <!-- Update img src and alt attribute  -->
@@ -280,7 +248,7 @@
                 <img
                   loading="lazy"
                   src="assets/images/work/agency-elevation.webp"
-                  alt="portfolio template"
+                  alt="IPL Data Analysis"
                 />
               </picture> 
             </div>
@@ -291,145 +259,135 @@
         </div>
       </section>
 
-      <section class="certificate">
+            <section class="work">
         <div class="container">
-          <h2 class="h2" id="certificate">My Certificates</h2>
-          <div class="certificate-grid">
-            
-            <!-- First Certificate -->
-            <div class="certificate-box">
-              <picture class="certificate-img">
-                <img
-                  loading="lazy"
-                  src="assets/images/certificate/Certificate for ADARSH KUMAR MAURYA_page-0001.jpg"
-                  alt="Postman API Fundamentals Certificate"
-                />
-              </picture>
-              <div class="certificate-details">
-                <h3 class="h3">Certificate of Completion Android development Internship <br> <br></h3>
-                <p>
-                  Skilled in App development using Jetpack Compose to create responsive Ui and Firebase for backend.
-                  <br>
-                  <br>
-                </p>
-                <ul>
-                  <li>Intern At : Ingenious Tech</li>
-                  <li>Date: October 2024</li>
+          <h2 class="h2" id="experience">Experience</h2>
+          <div class="experience-timeline">
+            <div class="experience-line" aria-hidden="true"></div>
+
+            <div class="experience-card">
+              <div class="experience-left" aria-hidden="true">JI</div>
+              <div class="experience-right">
+                <h3 class="h3">Senior Consultant</h3>
+                <span class="experience-company">JMR Infotech &middot; Full-time</span>
+                <span class="experience-date">May 2025 - Feb 2026 &middot; Bengaluru</span>
+                <ul class="experience-responsibilities">
+                  <li>Led client-facing data engineering workstreams and aligned solution design with business goals.</li>
+                  <li>Designed and optimized scalable ETL workflows for high-volume enterprise data pipelines.</li>
+                  <li>Improved data quality and reliability using validation checks and operational monitoring.</li>
+                  <li>Partnered with cross-functional teams to accelerate delivery and reduce production issues.</li>
                 </ul>
-                <a href="https://github.com/akmaurya7/certificate/blob/main/Certificate%20for%20ADARSH%20KUMAR%20MAURYA_page-0001.jpg" target="_blank" rel="noopener" class="link">
-                  View Certificate
-                </a>
-              </div>
-            </div>
-      
-            <!-- Second Certificate -->
-            <div class="certificate-box">
-              <picture class="certificate-img">
-                <img
-                  loading="lazy"
-                  src="assets/images/certificate/ADARSH KUMAR MAURYA aws_page-0001.jpg"
-                  alt="HackerRank Problem Solving Certificate"
-                />
-              </picture>
-              <div class="certificate-details">
-                <h3 class="h3">Certificate for Completion AWS Internship <br> <br></h3>
-                <p>
-                  Skilled in Cloud Computing, created ec2 instances, load balancing, Route 53, S3 bucket.
-                  <br><br>
-                </p>
-                <ul>
-                  <li>Intern at : Ingenious Tech</li>
-                  <li>Date: September 2023</li>
-                </ul>
-                <a href="https://github.com/akmaurya7/certificate/blob/main/ADARSH%20KUMAR%20MAURYA%20aws_page-0001.jpg" target="_blank" rel="noopener" class="link">
-                  View Certificate
-                </a>
               </div>
             </div>
 
-            <!-- Third Certificate -->
-            <div class="certificate-box">
-              <picture class="certificate-img">
-                <img
-                  loading="lazy"
-                  src="assets/images/certificate/Gssoc.jpg"
-                  alt="HackerRank Problem Solving Certificate"
-                />
-              </picture>
-              <div class="certificate-details">
-                <h3 class="h3">Certificate of Participation <br>(GSSoC 2024) <br><br> </h3>
-                <p>
-                  Participate in Open-Source contribution, cuducted by GirlScript Summer of Code (2024).
-                  <br><br>
-                </p>
-                <ul>
-                  <li>Issued by: GSSoC</li>
-                  <li>Date: November 2024</li>
+            <div class="experience-card">
+              <div class="experience-left" aria-hidden="true">NT</div>
+              <div class="experience-right">
+                <h3 class="h3">Senior Technical Consultant</h3>
+                <span class="experience-company">Northern Trust &middot; Full-time</span>
+                <span class="experience-date">Oct 2024 - May 2025 &middot; India (Hybrid)</span>
+                <ul class="experience-responsibilities">
+                  <li>Delivered technical consulting for enterprise data systems across regulated financial workloads.</li>
+                  <li>Supported modernization initiatives by improving integration patterns and data flow performance.</li>
+                  <li>Worked with stakeholders to translate reporting and analytics needs into implementable solutions.</li>
                 </ul>
-                <a href="https://github.com/akmaurya7/certificate/blob/main/Gssoc.jpg" target="_blank" rel="noopener" class="link">
-                  View Certificate
-                </a>
               </div>
             </div>
-            
-            <!-- Fourth Certificate -->
-            <div class="certificate-box">
-              <picture class="certificate-img">
-                <img
-                  loading="lazy"
-                  src="assets/images/certificate/Postman.jpg"
-                  alt="HackerRank Problem Solving Certificate"
-                />
-              </picture>
-              <div class="certificate-details">
-                <h3 class="h3">Postman Api Fundamentals Student Expert <br><br></h3>
-                <p>
-                  Achieved certification by diving into the Api fundamental by doing GET,POST,DELETE,PUT operation. <br><br>
-                </p>
-                <ul>
-                  <li>Issued by: Postman</li>
-                  <li>Date: October 2024</li>
+
+            <div class="experience-card">
+              <div class="experience-left" aria-hidden="true">PW</div>
+              <div class="experience-right">
+                <h3 class="h3">Associate</h3>
+                <span class="experience-company">PwC India &middot; Full-time</span>
+                <span class="experience-date">May 2022 - Sep 2024 &middot; Bengaluru, India</span>
+                <ul class="experience-responsibilities">
+                  <li>Built and supported analytics-focused data pipelines for advisory engagements.</li>
+                  <li>Developed reusable SQL and Python components to standardize data transformation logic.</li>
+                  <li>Collaborated with consulting and engineering teams to deliver data-driven client outcomes.</li>
+                  <li>Contributed to testing, documentation, and handover practices for stable production rollout.</li>
                 </ul>
-                <a href="https://github.com/akmaurya7/certificate/blob/main/Postman.jpg" target="_blank" rel="noopener" class="link">
-                  View Certificate
-                </a>
               </div>
             </div>
-                
-      
+
+            <div class="experience-card">
+              <div class="experience-left" aria-hidden="true">PF</div>
+              <div class="experience-right">
+                <h3 class="h3">OFSAA Technical Consultant</h3>
+                <span class="experience-company">Profinch &middot; Full-time</span>
+                <span class="experience-date">Jun 2021 - Apr 2022 &middot; Bengaluru, India</span>
+                <ul class="experience-responsibilities">
+                  <li>Implemented and customized OFSAA components for financial data processing use cases.</li>
+                  <li>Supported end-to-end data mapping, reconciliation, and regulatory reporting requirements.</li>
+                  <li>Resolved production issues and optimized batch execution performance in banking workflows.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="experience-card">
+              <div class="experience-left" aria-hidden="true">JI</div>
+              <div class="experience-right">
+                <h3 class="h3">Associate Software Engineer</h3>
+                <span class="experience-company">JMR Infotech &middot; Full-time</span>
+                <span class="experience-date">Aug 2019 - May 2021 &middot; Bengaluru, India</span>
+                <ul class="experience-responsibilities">
+                  <li>Developed backend and data processing features for enterprise software solutions.</li>
+                  <li>Created and maintained scripts for data ingestion, validation, and transformation tasks.</li>
+                  <li>Worked closely with senior engineers to debug issues and improve delivery quality.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="certificate">
+        <div class="container">
+          <h2 class="h2" id="certificate">Certifications</h2>
+          <div class="certificate-grid">
+            <div class="certificate-box">
+              <div class="certificate-details">
+                <h3 class="h3">Certification details can be added here</h3>
+                <p>
+                  Add your latest data engineering, cloud, and analytics certifications in this section.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       
       
       <section class="skills">
-        <div class="container">
-          <h2 class="h2" id="skills">My Toolkit</h2>
-          <div class="skills-imgs">
-                <img src="https://skillicons.dev/icons?i=kotlin" alt="Kotlin" class="skills-img" loading="lazy" title="Kotlin">
-                <img src="https://skillicons.dev/icons?i=java" alt="java" class="skills-img" loading="lazy" title="java">
-                <img src="https://skillicons.dev/icons?i=python" alt="python" class="skills-img" loading="lazy" title="python">
-<!--                 <img src="https://skillicons.dev/icons?i=cpp" alt="cpp" class="skills-img" loading="lazy" title="cpp"> -->
-                <img src="https://skillicons.dev/icons?i=c" alt="c" class="skills-img" loading="lazy" title="c">
-                <img src="https://skillicons.dev/icons?i=firebase" alt="firebase" class="skills-img" loading="lazy" title="firebase">
-                <img src="https://skillicons.dev/icons?i=aws" alt="aws" class="skills-img" loading="lazy" title="aws">
-                <!-- <img src="https://skillicons.dev/icons?i=gcp" alt="gcp" class="skills-img" loading="lazy" title="gcp"> -->
-                <!-- <img src="https://skillicons.dev/icons?i=mysql" alt="mysql" class="skills-img" loading="lazy" title="mysql"> -->
-                <img src="https://skillicons.dev/icons?i=mongodb" alt="mongodb" class="skills-img" loading="lazy" title="mongodb">
-                <img src="https://skillicons.dev/icons?i=androidstudio" alt="androidstudio" class="skills-img" loading="lazy" title="androidstudio">
-                <!-- <img src="https://skillicons.dev/icons?i=gradle" alt="gradle" class="skills-img" loading="lazy" title="gradle"> -->
-                <!-- <img src="https://skillicons.dev/icons?i=git" alt="git" class="skills-img" loading="lazy" title="git"> -->
-                <img src="https://skillicons.dev/icons?i=github" alt="github" class="skills-img" loading="lazy" title="github">
-                <!-- <img src="https://skillicons.dev/icons?i=postman" alt="postman" class="skills-img" loading="lazy" title="postman"> -->
-                <img src="https://skillicons.dev/icons?i=html" alt="html" class="skills-img" loading="lazy" title="html">
-                <img src="https://skillicons.dev/icons?i=css" alt="css" class="skills-img" loading="lazy" title="css">
-                <img src="https://skillicons.dev/icons?i=js" alt="js" class="skills-img" loading="lazy" title="js">
-<!--                 <img src="https://skillicons.dev/icons?i=ktor" alt="ktor" class="skills-img" loading="lazy" title="ktor"> -->
-<!--                 <img src="https://skillicons.dev/icons?i=nodejs" alt="nodejs" class="skills-img" loading="lazy" title="nodejs"> -->
-            </figure>
-          </div>
-        </div>
-      </section>
+  <div class="container">
+    <h2 class="h2" id="skills">My Toolkit</h2>
+    <div class="skills-imgs">
+
+      <!-- skillicons (confirmed available) -->
+      <img src="https://skillicons.dev/icons?i=python" alt="Python" class="skills-img" loading="lazy" title="Python">
+      <img src="https://skillicons.dev/icons?i=java" alt="Java" class="skills-img" loading="lazy" title="Java">
+      <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" class="skills-img" loading="lazy" title="SQL / MySQL">
+      <img src="https://skillicons.dev/icons?i=aws" alt="AWS" class="skills-img" loading="lazy" title="AWS">
+      <img src="https://skillicons.dev/icons?i=gcp" alt="GCP" class="skills-img" loading="lazy" title="Google Cloud Platform">
+      <img src="https://skillicons.dev/icons?i=kafka" alt="Kafka" class="skills-img" loading="lazy" title="Apache Kafka">
+      <img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" class="skills-img" loading="lazy" title="PostgreSQL">
+      <img src="https://skillicons.dev/icons?i=docker" alt="Docker" class="skills-img" loading="lazy" title="Docker">
+      <img src="https://skillicons.dev/icons?i=git" alt="Git" class="skills-img" loading="lazy" title="Git">
+      <img src="https://skillicons.dev/icons?i=github" alt="GitHub" class="skills-img" loading="lazy" title="GitHub">
+
+      <!-- devicon CDN — proper colored SVG icons, same square format -->
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="Oracle" class="skills-img devicon-bg" loading="lazy" title="Oracle">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original-wordmark.svg" alt="PySpark" class="skills-img devicon-bg" loading="lazy" title="PySpark">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Databricks" class="skills-img devicon-bg" loading="lazy" title="Databricks">
+
+      <!-- Looker Studio -->
+      <img src="https://cdn.simpleicons.org/looker/4285F4" alt="Looker Studio" class="skills-img devicon-bg" loading="lazy" title="Looker Studio">
+
+      <!-- Databricks -->
+      <img src="https://cdn.simpleicons.org/databricks/FF3621" alt="Databricks" class="skills-img devicon-bg" loading="lazy" title="Databricks">
+
+    </div>
+  </div>
+</section>
 
       <section class="contact">
         <div class="container">
@@ -442,21 +400,12 @@
                 Available for hire
               </strong>
               <p class="contact-text">
-                As an Android Developer, I create App interfaces and design with a special love for accessibility and the
-                performance. I tend to code things from scratch and enjoy
-                bringing ideas to life.
+                As a Data Engineer, I build robust data pipelines and analytics systems with a focus on reliability, scalability, and business impact.
               </p>
               <p class="contact-text">
-                I'm also an open-source developer, and in my spare time, I design
-                awsome app.
+                Reach me at shubham.kashyap@rumango.com or call +91 9008154717.
               </p>
-              <!-- Replace src with your signatures and name -->
-              <img
-                src="assets/images/sign.webp"
-                alt="Adarsh"
-                class="signatures"
-                loading="lazy"
-              />
+              <p class="signatures" aria-label="Signature">Shubham Kashyap</p>
             </div>
             <form action="#" class="contact-form" netlify>
               <div class="form-field">

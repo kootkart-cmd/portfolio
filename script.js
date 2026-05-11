@@ -45,10 +45,14 @@ let observer = new IntersectionObserver(
     const [entry] = entries;
     const [textbox, picture] = Array.from(entry.target.children);
     if (entry.isIntersecting) {
-      picture.classList.remove("transform");
-      Array.from(textbox.children).forEach(
-        (el) => (el.style.animationPlayState = "running")
-      );
+      if (picture) {
+        picture.classList.remove("transform");
+      }
+      if (textbox) {
+        Array.from(textbox.children).forEach(
+          (el) => (el.style.animationPlayState = "running")
+        );
+      }
     }
   },
   { threshold: 0.3 }
@@ -111,4 +115,51 @@ logosWrappers.forEach(async (logoWrapper, i) => {
   }, 5600);
 });
 
-yearEl.textContent = new Date().getFullYear();
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
+
+// Contact form submission via Resend backend endpoint
+const contactFormEl = document.querySelector("#contact-form");
+const contactStatusEl = document.querySelector("#contact-status");
+
+if (contactFormEl && contactStatusEl) {
+  contactFormEl.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const submitBtn = contactFormEl.querySelector('button[type="submit"]');
+    const formData = new FormData(contactFormEl);
+    const payload = {
+      name: String(formData.get("name") || "").trim(),
+      email: String(formData.get("email") || "").trim(),
+      message: String(formData.get("message") || "").trim(),
+    };
+
+    contactStatusEl.textContent = "Sending message...";
+    contactStatusEl.classList.remove("is-error", "is-success");
+    submitBtn.disabled = true;
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error("Unable to send");
+      }
+
+      contactStatusEl.textContent =
+        "Message sent successfully. Thank you for reaching out!";
+      contactStatusEl.classList.add("is-success");
+      contactFormEl.reset();
+    } catch (error) {
+      contactStatusEl.textContent =
+        "Message failed to send. Please try again in a moment.";
+      contactStatusEl.classList.add("is-error");
+    } finally {
+      submitBtn.disabled = false;
+    }
+  });
+}

@@ -495,6 +495,29 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
+  .header-profile {
+    margin-block-end: var(--gutter-medium);
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 3px solid var(--border-dark);
+    box-shadow: var(--shadow);
+    display: block;
+  }
+
+  body.dark .profile-img {
+    box-shadow: 0 0 0 4px #ffffff15, var(--shadow);
+  }
+
+  body.light .profile-img {
+    box-shadow: 0 0 0 4px #00000012, var(--shadow);
+  }
   
   .h1 span {
     display: block;
@@ -526,6 +549,11 @@
   }
   
   @media (max-width: 400px) {
+    .header-profile {
+      display: flex;
+      justify-content: center;
+    }
+
     .header-textbox {
       left: 0;
       text-align: center;
@@ -752,6 +780,123 @@
       opacity: 1;
     }
   }
+
+  /* --------------------------------- */
+  /* ----- Experience -----*/
+  /* --------------------------------- */
+
+  .experience-timeline {
+    position: relative;
+    padding-block-start: var(--gutter-x-large);
+    max-inline-size: 800px;
+    margin-inline: auto;
+  }
+
+  .experience-line {
+    position: absolute;
+    left: 18px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--border-dark);
+  }
+
+  .experience-card {
+    display: flex;
+    gap: var(--gutter-medium);
+    position: relative;
+    margin-block-end: var(--gutter-x-large);
+  }
+
+  .experience-left {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: var(--gradient-brand);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .experience-right {
+    padding-block-start: var(--gutter-nano);
+  }
+
+  .experience-company {
+    display: block;
+    font-size: var(--text-small);
+    font-weight: 600;
+    color: var(--sub);
+    margin-block-end: var(--gutter-nano);
+  }
+
+  .experience-date {
+    display: inline-block;
+    font-size: 0.95rem;
+    color: var(--body);
+    background-color: var(--bg-color-secondary);
+    border: 1px solid var(--border-dark);
+    border-radius: var(--gutter-small);
+    padding: 2px 12px;
+    margin-block-end: var(--gutter-micro);
+  }
+
+  .experience-responsibilities {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-inline-start: var(--gutter-micro);
+    color: var(--body);
+    font-weight: 300;
+    margin-block-start: var(--gutter-nano);
+  }
+
+  .experience-responsibilities li {
+    margin-block-end: var(--gutter-nano);
+  }
+
+  body.dark .experience-right {
+    background-color: var(--bg-color-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--gutter-nano);
+    padding: var(--gutter-small);
+    padding-block-start: var(--gutter-small);
+  }
+
+  @media (max-width: 600px) {
+    .experience-card {
+      gap: var(--gutter-small);
+      margin-block-end: var(--gutter-medium);
+    }
+
+    .experience-left {
+      width: 36px;
+      height: 36px;
+      font-size: 0.9rem;
+    }
+
+    .experience-line {
+      left: 16px;
+    }
+
+    .experience-company {
+      font-size: 1rem;
+    }
+
+    .experience-date {
+      font-size: 0.85rem;
+      padding: 2px 10px;
+    }
+
+    .experience-responsibilities {
+      font-size: 1rem;
+    }
+  }
   
   /* --------------------------------- */
   /* ----- Certificate -----*/
@@ -905,6 +1050,16 @@
       inline-size: 55px;
     }
   }
+
+  .devicon-bg {
+  padding: 18px;
+  border-radius: 16px;
+  background-color: #1e1e2e;
+}
+
+body.light .devicon-bg {
+  background-color: #f0f0f0;
+}
   
   /* --------------------------------- */
   /* ----- Contact -----*/
@@ -984,11 +1139,17 @@
   }
   
   .signatures {
-    inline-size: 150px;
+    margin-top: var(--gutter-micro);
+    font-family: "Brush Script MT", "Segoe Script", "Lucida Handwriting", cursive;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: var(--important);
+    font-weight: 400;
   }
   
   body.light .signatures {
-    filter: invert(1);
+    color: #111;
   }
   
   .contact-form {
@@ -1038,6 +1199,21 @@
   
   .contact-form button[type="submit"] {
     border: none;
+  }
+
+  .contact-status {
+    margin-top: var(--gutter-micro);
+    font-size: var(--text-small);
+    color: var(--sub);
+    min-height: 1.4em;
+  }
+
+  .contact-status.is-success {
+    color: #37c27f;
+  }
+
+  .contact-status.is-error {
+    color: #ff7b7b;
   }
   
   /* --------------------------------- */
