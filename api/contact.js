@@ -31,7 +31,7 @@ module.exports = async function handler(req, res) {
 
     const resendApiKey = process.env.RESEND_API_KEY;
     const fromEmail = process.env.FROM_EMAIL || "Portfolio Contact <onboarding@resend.dev>";
-    const toEmail = "shubham.kashyap@rumango.com";
+    const toEmail = "sk.skashyap1998@gmail.com";
 
     if (!resendApiKey) {
       res.status(500).json({ error: "Missing RESEND_API_KEY" });
